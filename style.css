@@ -330,11 +330,11 @@ body {
   right: 5rem;
 }
 @media only screen and (max-width: 480px) {
-  .nav {
+  /* .nav {
     flex-direction: column;
     position: static;
     gap: 3rem;
-  }
+  } */
   .nav .links {
     flex-direction: column;
   }
