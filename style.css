@@ -388,6 +388,7 @@ body {
   .about {
     margin-top: 30rem;
     flex-direction: column;
+    height: 105vh;
   }
   .about .aboutme {
     flex-direction: column;
@@ -507,6 +508,7 @@ body {
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 850px) {
+
   .nav .btns {
     position: relative;
     right: 20px;
@@ -560,12 +562,15 @@ body {
   }
   .about {
     margin: 6rem 0.5rem;
+   height: 1rem;
+  
   }
   .about .aboutme {
     position: relative;
     right: 45px;
     white-space: nowrap;
   }
+
   .about .italic .first {
     width: 40vw;
     position: relative;
