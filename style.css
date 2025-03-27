@@ -324,20 +324,21 @@ body {
 .about .italic .border .fifty {
   position: relative;
   right: 5rem;
-  justify-content: ;
 }
 .about .italic .border .thirty {
   position: relative;
   right: 5rem;
 }
 @media only screen and (max-width: 480px) {
+  body {
+    height: 100%;
+  }
   .nav {
     flex-direction: column;
     position: static;
     gap: 3rem;
-    
   }
-  .nav .btns{
+  .nav .btns {
     display: none;
   }
   .nav .links {
@@ -392,9 +393,9 @@ body {
     width: 70px;
   }
   .about {
-    margin-top: 30rem;
+    bottom: 2rem;
     flex-direction: column;
-    height: 105vh;
+    height: 100%;
   }
   .about .aboutme {
     flex-direction: column;
