@@ -324,6 +324,7 @@ body {
 .about .italic .border .fifty {
   position: relative;
   right: 5rem;
+  justify-content: ;
 }
 .about .italic .border .thirty {
   position: relative;
@@ -333,10 +334,15 @@ body {
   .nav {
     flex-direction: column;
     position: static;
-    gap: 3rem
+    gap: 3rem;
+    
+  }
+  .nav .btns{
+    display: none;
   }
   .nav .links {
     flex-direction: column;
+    display: none;
   }
   .nav .logo img {
     position: absolute;
@@ -508,7 +514,6 @@ body {
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 850px) {
-
   .nav .btns {
     position: relative;
     right: 20px;
@@ -562,8 +567,7 @@ body {
   }
   .about {
     margin: 6rem 0.5rem;
-   height: 1rem;
-  
+    height: 1rem;
   }
   .about .aboutme {
     position: relative;
