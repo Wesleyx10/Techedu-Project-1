@@ -330,6 +330,7 @@ body {
     padding-bottom: 3rem;
     .links {
       flex-direction: column;
+      display: none;
     }
     img {
       position: relative;
@@ -348,9 +349,11 @@ body {
       .close {
         display: none;
         font-size: 1.8rem;
+        color: white;
       }
     }
     .download {
+      display: none;
       img {
         position: static;
       }
@@ -449,6 +452,7 @@ body {
         margin-right: 0;
         #in {
           width: 50%;
+          white-space: nowrap;
         }
         #re {
           position: relative;
@@ -498,6 +502,110 @@ body {
         #six {
           padding: 1rem 1.2rem 1rem 1rem;
         }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 835px) {
+  .nav {
+    .links {
+      gap: 1rem;
+    }
+  }
+  .header {
+    clip-path: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0rem 2rem 3rem;
+    .text {
+      .hello {
+        #hello {
+          font-size: 60px;
+        }
+        #lor {
+          font-size: 60px;
+        }
+        #lorem {
+          font-size: 35px;
+        }
+      }
+      .border {
+        button {
+          padding: 0.7rem 1.5rem;
+        }
+        #list {
+          font-size: 25px;
+          ul li::marker {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+    .image {
+      left: -5rem;
+      bottom: 2rem;
+
+      img {
+        width: 400px;
+      }
+    }
+  }
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    .create {
+      align-items: center;
+      .text {
+        align-items: center;
+        #me {
+          font-size: 60px;
+        }
+        #like {
+          font-size: 35px;
+        }
+      }
+      .icontext {
+        .img {
+          gap: 1.2rem;
+          img {
+            width: 50px;
+          }
+        }
+        #btn {
+          font-size: 20px;
+          padding: 0.8rem 1.2rem;
+          img {
+            width: 22px;
+          }
+        }
+      }
+      .input {
+        align-items: center;
+        font-size: 25px;
+        #re {
+          position: relative;
+          right: 13.7rem;
+        }
+        #em {
+          position: relative;
+          right: 9rem;
+        }
+        #fr {
+          position: relative;
+          right: 12rem;
+        }
+      }
+    }
+    .text {
+      gap: 3rem;
+      #ipsum {
+        font-size: 22px;
+      }
+      #Karem {
+        font-size: 69px;
+        position: relative;
+        left: 5rem;
       }
     }
   }

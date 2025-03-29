@@ -334,6 +334,7 @@ body {
   }
   .nav .links {
     flex-direction: column;
+    display: none;
   }
   .nav img {
     position: relative;
@@ -353,6 +354,10 @@ body {
   .nav .bars .close {
     display: none;
     font-size: 1.8rem;
+    color: white;
+  }
+  .nav .download {
+    display: none;
   }
   .nav .download img {
     position: static;
@@ -446,6 +451,7 @@ body {
   }
   .about .create .input #in {
     width: 50%;
+    white-space: nowrap;
   }
   .about .create .input #re {
     position: relative;
@@ -492,5 +498,99 @@ body {
   }
   .about .border .second #six {
     padding: 1rem 1.2rem 1rem 1rem;
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 835px) {
+  .nav .links {
+    gap: 1rem;
+  }
+  .header {
+    -webkit-clip-path: none;
+            clip-path: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0rem 2rem 3rem;
+  }
+  .header .text .hello #hello {
+    font-size: 60px;
+  }
+  .header .text .hello #lor {
+    font-size: 60px;
+  }
+  .header .text .hello #lorem {
+    font-size: 35px;
+  }
+  .header .text .border button {
+    padding: 0.7rem 1.5rem;
+  }
+  .header .text .border #list {
+    font-size: 25px;
+  }
+  .header .text .border #list ul li::marker {
+    font-size: 25px;
+  }
+  .header .image {
+    left: -5rem;
+    bottom: 2rem;
+  }
+  .header .image img {
+    width: 400px;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+  }
+  .about .create {
+    align-items: center;
+  }
+  .about .create .text {
+    align-items: center;
+  }
+  .about .create .text #me {
+    font-size: 60px;
+  }
+  .about .create .text #like {
+    font-size: 35px;
+  }
+  .about .create .icontext .img {
+    gap: 1.2rem;
+  }
+  .about .create .icontext .img img {
+    width: 50px;
+  }
+  .about .create .icontext #btn {
+    font-size: 20px;
+    padding: 0.8rem 1.2rem;
+  }
+  .about .create .icontext #btn img {
+    width: 22px;
+  }
+  .about .create .input {
+    align-items: center;
+    font-size: 25px;
+  }
+  .about .create .input #re {
+    position: relative;
+    right: 13.7rem;
+  }
+  .about .create .input #em {
+    position: relative;
+    right: 9rem;
+  }
+  .about .create .input #fr {
+    position: relative;
+    right: 12rem;
+  }
+  .about .text {
+    gap: 3rem;
+  }
+  .about .text #ipsum {
+    font-size: 22px;
+  }
+  .about .text #Karem {
+    font-size: 69px;
+    position: relative;
+    left: 5rem;
   }
 }/*# sourceMappingURL=style.css.map */
