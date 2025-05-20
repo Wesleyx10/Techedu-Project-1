@@ -83,7 +83,7 @@ body {
         font-weight: 200;
       }
     }
-    .border {
+    .borders {
       display: flex;
       gap: 3rem;
       align-items: center;
@@ -322,291 +322,139 @@ body {
     }
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 0px) and (max-width: 500px) {
   .nav {
     flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
     align-items: center;
-    gap: 3rem;
-    padding-bottom: 3rem;
+    justify-content: center;
+    #logo {
+      position: absolute;
+      top: 1.5rem;
+      left: 0.6rem;
+    }
     .links {
       flex-direction: column;
+      border: 2px solid var(--nav-button-color);
+      border-radius: 10px;
+      position: absolute;
+      top: 4rem;
+      right: 0.5rem;
+      z-index: 999;
+      background-color: white;
+      gap: 0;
       display: none;
-    }
-    img {
-      position: relative;
-      right: 9rem;
-      top: 0.5rem;
+      a {
+        color: black;
+        padding: 1rem 0.5rem;
+      }
+      a:hover {
+        background-color: #587e7c;
+        color: white;
+      }
+      a:last-child {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      a:first-child {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
     }
     .bars {
       display: block;
       position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      .open {
-        font-size: 1.8rem;
-        color: white;
-      }
+      top: 2.1rem;
+      right: 1rem;
+      color: white;
+      font-size: 25px;
       .close {
         display: none;
-        font-size: 1.8rem;
-        color: white;
-      }
-    }
-    .download {
-      display: none;
-      img {
-        position: static;
       }
     }
   }
   .header {
-    clip-path: none;
-    padding: 5rem 2rem 2rem 2rem;
     flex-direction: column;
     align-items: center;
-
-    .text {
-      .hello {
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        #hello {
-          font-size: 40px;
-        }
-        #lor {
-          font-size: 30px;
-        }
-        #lorem {
-          font-size: 20px;
-        }
-      }
-    }
-    .border {
-      gap: 1rem;
-      align-items: center;
-      #bt {
-        padding: 0.5rem 0.7rem;
-        white-space: nowrap;
-        font-size: 11px;
-      }
-      #list {
-        white-space: nowrap;
-        #ul {
-          font-size: 17px;
-          li::marker {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-    .image {
-      left: -2.6rem;
-      bottom: 0;
-      justify-content: center;
-
-      img {
-        width: 300px;
-      }
-      .border {
-        border-radius: 20px;
-        gap: 0.2rem;
-        #fig {
-          font-size: 30px;
-        }
-        #lorem {
-          font-size: 15px;
-        }
-      }
-    }
-  }
-  .about {
-    flex-direction: column;
-    gap: 6rem;
-    .create {
-      .text {
-        align-items: center;
-        #me {
-          font-size: 40px;
-        }
-        #like {
-          font-size: 20px;
-        }
-      }
-      .icontext {
-        gap: 1rem;
-        justify-content: center;
-        .img {
-          img {
-            width: 35px;
-          }
-        }
-        #btn {
-          font-size: 14px;
-          img {
-            width: 15px;
-          }
-        }
-      }
-      .input {
-        align-items: center;
-        margin-right: 0;
-        #in {
-          width: 50%;
-          white-space: nowrap;
-        }
-        #re {
-          position: relative;
-          right: 4.7rem;
-        }
-        #em {
-          position: relative;
-          right: 1.7rem;
-        }
-        #fr {
-          position: relative;
-          right: 3.8rem;
-        }
-      }
-    }
-    .text {
-      #ipsum {
-        font-size: 13px;
-        text-align: center;
-      }
-      #Karem {
-        font-size: 55px;
-        align-items: center;
-        position: relative;
-        right: 3rem;
-      }
-    }
-    .border {
-      border-right: none;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-      left: 1rem;
-      .first {
-        right: 3rem;
-        #fifty {
-          padding: 1rem 1.2rem 1rem 1rem;
-        }
-        #seven {
-          padding: 1rem 1.2rem 1rem 1rem;
-        }
-      }
-      .second {
-        right: 3rem;
-        #thirty {
-          padding: 1rem 1.2rem 1rem 1rem;
-        }
-        #six {
-          padding: 1rem 1.2rem 1rem 1rem;
-        }
-      }
-    }
-  }
-}
-@media only screen and (min-width: 520px) and (max-width: 835px) {
-  .nav {
-    .links {
-      gap: 1rem;
-    }
-  }
-  .header {
+    padding: 5rem 1rem;
+    gap: 2rem;
     clip-path: none;
+    text-align: center;
+  }
+
+  .header .text {
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .header .text .hello {
+    align-items: center;
+  }
+
+  .header .text .hello #hello,
+  .header .text .hello #lor {
+    font-size: 32px;
+  }
+
+  .header .text .hello #lorem {
+    font-size: 18px;
+  }
+  .header .borders {
+    #bt,
+    #li {
+      font-size: 12px;
+      white-space: nowrap;
+    }
+  }
+  .header .image {
     flex-direction: column;
     align-items: center;
-    padding: 6rem 0rem 2rem 3rem;
-    .text {
-      .hello {
-        #hello {
-          font-size: 60px;
-        }
-        #lor {
-          font-size: 60px;
-        }
-        #lorem {
-          font-size: 35px;
-        }
-      }
-      .border {
-        button {
-          padding: 0.7rem 1.5rem;
-        }
-        #list {
-          font-size: 25px;
-          ul li::marker {
-            font-size: 25px;
-          }
-        }
-      }
-    }
-    .image {
-      left: -5rem;
-      bottom: 2rem;
-
-      img {
-        width: 400px;
-      }
-    }
+    left: 0;
+    bottom: 0;
   }
+
+  .header .image img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .header .image .border {
+    left: -7rem;
+    top: 17rem;
+    font-size: 14px;
+  }
+
   .about {
     flex-direction: column;
-    justify-content: center;
-    gap: 6rem;
-    .create {
-      align-items: center;
-      .text {
-        align-items: center;
-        #me {
-          font-size: 60px;
-        }
-        #like {
-          font-size: 35px;
-        }
-      }
-      .icontext {
-        .img {
-          gap: 1.2rem;
-          img {
-            width: 50px;
-          }
-        }
-        #btn {
-          font-size: 20px;
-          padding: 0.8rem 1.2rem;
-          img {
-            width: 22px;
-          }
-        }
-      }
-      .input {
-        align-items: center;
-        font-size: 25px;
-        #re {
-          position: relative;
-          right: 13.7rem;
-        }
-        #em {
-          position: relative;
-          right: 9rem;
-        }
-        #fr {
-          position: relative;
-          right: 12rem;
-        }
-      }
-    }
-    .text {
-      gap: 3rem;
-      #ipsum {
-        font-size: 22px;
-      }
-      #Karem {
-        font-size: 69px;
-        position: relative;
-        left: 5rem;
-      }
-    }
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .about .create,
+  .about .text,
+  .about .border {
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .about .create .input #in {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .about .border .first,
+  .about .border .second {
+    flex-direction: column;
+    right: 0;
+  }
+
+  .about .border .first > div,
+  .about .border .second > div {
+    width: 100%;
+    padding: 1rem;
   }
 }
